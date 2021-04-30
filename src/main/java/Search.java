@@ -20,8 +20,16 @@ public class Search extends Page{
     }
 
     public void nextPage(String page_number) throws InterruptedException {
-        driver.findElement(By.xpath("//img[@src='//dbfukofby5ycr.cloudfront.net/m13/0/9/d2101/19bb1-close-icon-13612.png']")).click();
-        driver.findElement(By.xpath("//span[@class='gg-icon gg-icon-close icon-close']")).click();
+        try{
+            driver.findElement(By.xpath("//img[@src='//dbfukofby5ycr.cloudfront.net/m13/0/9/d2101/19bb1-close-icon-13612.png']")).click();
+        }catch (Exception e){
+
+        }
+        try{
+            driver.findElement(By.xpath("//span[@class='gg-icon gg-icon-close icon-close']")).click();
+        }catch (Exception e){
+
+        }
         driver.findElement(By.linkText(page_number)).click();
         Thread.sleep(2000);
     }
