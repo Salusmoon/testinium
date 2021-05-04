@@ -22,7 +22,7 @@ public class TestApp {
             home.getPage("https://www.gittigidiyor.com");
             home.loginButton("gekhq4-6",".qjixn8-0[data-cy='header-login-button']");
 
-            login.loginPorofile("berkergun58@gmail.com", "Berkcan.1","L-UserNameField","sifre"  );
+            login.loginPorofile("test58@gmail.com", "123456789a","L-UserNameField","sifre"  );
             login.loginButton("//*[@id='gg-login-enter']");
         }
 
